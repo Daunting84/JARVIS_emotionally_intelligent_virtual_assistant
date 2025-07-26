@@ -1,0 +1,12 @@
+public class BoneMover : MonoBehaviour
+{
+    public Transform headBone;
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.C))  // 'C' for curious?
+        {
+            headBone.localRotation = Quaternion.Euler(20, 0, 0); // tilt forward
+        }
+    }
+}
